@@ -17,7 +17,7 @@ while (respostaMenu != 0) {
                 console.log("O número que você tenta sacar excede o total em sua conta")
                 break
             }
-            else if (sacar == NaN) {
+            else if (sacar != parseInt) {
                 console.log("Você não digitou um número")
                 break
             }
@@ -32,7 +32,7 @@ while (respostaMenu != 0) {
                 console.log("Você não pode depositar um número negativo")
                 break
             }
-            else if (depositar == NaN) {
+            else if (depositar != parseInt) {
                 console.log("Você não digitou um número")
                 break
             }
