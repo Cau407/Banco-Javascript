@@ -11,15 +11,15 @@ while (respostaMenu != 0) {
             sacar = parseInt(prompt("Quanto deseja sacar?"))
             if (sacar < 0) {
                 console.log("Você não pode sacar um número negativo")
-                sacar = parseInt(prompt("Quanto deseja sacar?"))
+                break
             }
             else if (sacar > saldoConta) {
                 console.log("O número que você tenta sacar excede o total em sua conta")
-                sacar = parseInt(prompt("Quanto deseja sacar?"))
+                break
             }
             else if (sacar == NaN) {
                 console.log("Você não digitou um número")
-                sacar = parseInt(prompt("Quanto deseja sacar?"))
+                break
             }
             else {
                 saldoConta -= sacar
@@ -30,11 +30,11 @@ while (respostaMenu != 0) {
             depositar = parseInt(prompt("Quanto deseja depositar?"))
             if (depositar < 0) {
                 console.log("Você não pode depositar um número negativo")
-                sacar = parseInt(prompt("Quanto deseja depositar?"))
+                break
             }
             else if (depositar == NaN) {
                 console.log("Você não digitou um número")
-                sacar = parseInt(prompt("Quanto deseja sacar?"))
+                break
             }
             else {
                 saldoConta += depositar
